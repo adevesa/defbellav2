@@ -1,0 +1,55 @@
+{
+  "acondicionamiento": {
+    "price": "$25.000",
+    "description": "Este servicio está pensado para aquellas situaciones en las que no pudiste rasurarte antes del turno. Es una preparación previa realizada en gabinete con maquinita descartable para poder avanzar con tu tratamiento sin complicaciones ni demoras."
+  },
+  "services": [
+    {"name": "Rostro Completo", "price": "$23.000", "category": "rostro"},
+    {"name": "Bozo", "price": "$18.000", "category": "rostro"},
+    {"name": "Mentón", "price": "$18.000", "category": "rostro"},
+    {"name": "Nuca", "price": "$17.000", "category": "rostro"},
+    {"name": "Pierna Entera", "price": "$29.000", "category": "piernas"},
+    {"name": "Media Pierna", "price": "$22.000", "category": "piernas"},
+    {"name": "Brazos", "price": "$18.000", "category": "brazos"},
+    {"name": "Axilas", "price": "$20.000", "category": "brazos"},
+    {"name": "Dedos", "price": "$14.000", "category": "brazos"},
+    {"name": "Cavado Completo", "price": "$26.000", "category": "cuerpo"},
+    {"name": "Cavado Bikini", "price": "$18.000", "category": "cuerpo"},
+    {"name": "Tira de Cola", "price": "$18.000", "category": "cuerpo"},
+    {"name": "Glúteos", "price": "$18.000", "category": "cuerpo"},
+    {"name": "Espalda Completa", "price": "$22.000", "category": "cuerpo"},
+    {"name": "Espalda Baja", "price": "$15.000", "category": "cuerpo"},
+    {"name": "Abdomen", "price": "$18.000", "category": "cuerpo"},
+    {"name": "Línea Alba", "price": "$18.000", "category": "cuerpo"},
+    {"name": "Aréolas", "price": "$17.000", "category": "cuerpo"}
+  ],
+  "promos": [
+    {
+      "id": 1,
+      "title": "Promo Pack 1",
+      "items": ["Axilas", "Cavado Completo", "Pierna Entera", "Tira de Cola"],
+      "oldPrice": "$42.000",
+      "price": "$39.060",
+      "badge": "Mayo-Junio -7%",
+      "footer": "Precio final con 7% de descuento aplicado."
+    },
+    {
+      "id": 2,
+      "title": "Promo Pack 2",
+      "items": ["Cavado", "Tira de Cola"],
+      "oldPrice": "",
+      "price": "$35.000",
+      "badge": "",
+      "footer": "Excelente combinación para cuidado íntimo rápido."
+    },
+    {
+      "id": 3,
+      "title": "Promo Pack 3",
+      "items": ["Bozo", "Axilas", "Cavado Completo", "Pierna Entera", "Tira de Cola"],
+      "oldPrice": "",
+      "price": "$55.000",
+      "badge": "",
+      "footer": "Tratamiento integral multizona súper completo."
+    }
+  ]
+}
