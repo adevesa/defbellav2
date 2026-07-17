@@ -250,7 +250,6 @@
      <div class="hidden md:flex gap-8 text-sm font-semibold tracking-wide">
       <a href="#inicio" class="nav-link text-brand-chocolate hover:text-brand-gold">Inicio</a>
       <a href="#servicios" class="nav-link text-brand-chocolate hover:text-brand-gold">Servicios</a>
-      <a href="#promos" class="nav-link text-brand-chocolate hover:text-brand-gold">Promos</a>
       <a href="#beneficios" class="nav-link text-brand-chocolate hover:text-brand-gold">Beneficios</a>
       <a href="#laser" class="nav-link text-brand-chocolate hover:text-brand-gold">Info Láser</a>
       <a href="#ubicacion" class="nav-link text-brand-chocolate hover:text-brand-gold">Ubicación</a>
@@ -263,7 +262,6 @@
     <div id="mobile-menu" class="hidden md:hidden flex-col gap-4 pt-4 pb-2 text-sm font-semibold text-center border-t border-neutral-200/50 mt-3">
      <a href="#inicio" class="block py-2 text-brand-chocolate hover:text-brand-gold transition-colors">Inicio</a>
      <a href="#servicios" class="block py-2 text-brand-chocolate hover:text-brand-gold transition-colors">Servicios</a>
-     <a href="#promos" class="block py-2 text-brand-chocolate hover:text-brand-gold transition-colors">Promos</a>
      <a href="#beneficios" class="block py-2 text-brand-chocolate hover:text-brand-gold transition-colors">Beneficios</a>
      <a href="#laser" class="block py-2 text-brand-chocolate hover:text-brand-gold transition-colors">Info Láser</a>
      <a href="#ubicacion" class="block py-2 text-brand-chocolate hover:text-brand-gold transition-colors">Ubicación</a>
@@ -340,7 +338,7 @@
    <section id="servicios" class="px-4 py-20 fade-in delay-1">
     <div class="max-w-5xl mx-auto">
      <h2 class="font-playfair text-3xl md:text-4xl font-bold text-center text-brand-chocolate mb-2">Nuestros Servicios</h2>
-     <p class="text-center text-sm text-brand-chocolateLight mb-10">Zonas y precios individuales por sesión</p>
+     <p class="text-center text-sm text-brand-chocolateLight mb-10">Zonas y servicios por sesión</p>
      
      <!-- Interactive Category Cards (Vercel Style) -->
      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12" id="category-cards">
@@ -374,8 +372,15 @@
      </div>
 
      <!-- Services Grid -->
-     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-12" id="services-grid">
+     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8" id="services-grid">
       <!-- Populated dynamically by JS -->
+     </div>
+
+     <!-- Botón de consulta de precios -->
+     <div class="flex justify-center mb-12">
+      <a href="https://precios.definitivamentebella.com.ar" target="_blank" rel="noopener noreferrer" class="px-8 py-3.5 rounded-full bg-brand-chocolate text-brand-cream hover:bg-brand-gold hover:shadow-lg hover:shadow-brand-gold/20 active:scale-[0.98] transition-all duration-300 font-bold tracking-wide text-center flex items-center gap-2">
+       <i class="fa-solid fa-tags"></i> Consulta los precios
+      </a>
      </div>
 
      <!-- Acondicionamiento de zonas íntimas -->
@@ -387,7 +392,6 @@
        <div>
         <div class="flex flex-wrap items-baseline gap-x-4 gap-y-1 mb-3">
          <h3 class="font-playfair text-xl font-bold text-brand-chocolate">Acondicionamiento de Zonas Íntimas</h3>
-         <span class="text-lg font-bold text-brand-gold">$25.000</span>
         </div>
         <p class="text-sm text-brand-chocolateLight leading-relaxed mb-4">
          Este servicio está pensado para aquellas situaciones en las que no pudiste rasurarte antes del turno. Es una preparación previa realizada en gabinete con maquinita descartable para poder avanzar con tu tratamiento sin complicaciones ni demoras.
@@ -404,87 +408,6 @@
         </div>
        </div>
       </div>
-     </div>
-    </div>
-   </section>
-
-   <div class="section-divider max-w-5xl mx-auto"></div>
-
-   <!-- Promos -->
-   <section id="promos" class="px-4 py-20 fade-in delay-2 bg-brand-creamcard/40">
-    <div class="max-w-5xl mx-auto">
-     <h2 class="font-playfair text-3xl md:text-4xl font-bold text-center text-brand-chocolate mb-2">Promociones Especiales</h2>
-     <p class="text-center text-sm text-brand-chocolateLight mb-8">Packs de zonas combinadas con descuentos</p>
-     
-     <div class="text-center mb-12">
-      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold bg-amber-50 text-amber-800 border border-amber-200/60 shadow-sm">
-       <i class="fa-solid fa-circle-info text-brand-gold"></i> 
-       <span id="promo-disclaimer">Las promociones no son fijas durante el tratamiento y pueden modificarse.</span>
-      </div>
-     </div>
-
-     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <!-- Promo 1 -->
-      <div class="premium-card rounded-[32px] p-8 bg-white flex flex-col justify-between relative overflow-hidden shadow-sm">
-       <div class="absolute top-4 right-4 px-3 py-1 rounded-full text-xs font-bold bg-green-50 text-green-700 border border-green-200">
-        Mayo-Junio -7%
-       </div>
-       <div>
-        <div class="text-xs font-bold uppercase tracking-widest text-brand-gold mb-4">Promo Pack 1</div>
-        <ul class="space-y-3 mb-8 text-brand-chocolate opacity-95">
-         <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold text-xs"></i> Axilas</li>
-         <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold text-xs"></i> Cavado Completo</li>
-         <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold text-xs"></i> Pierna Entera</li>
-         <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold text-xs"></i> Tira de Cola</li>
-        </ul>
-       </div>
-       <div>
-        <div class="text-xs text-brand-chocolateLight opacity-70 line-through">$42.000</div>
-        <div class="font-playfair text-4xl font-bold text-brand-chocolate mb-2">$39.060</div>
-        <p class="text-xs text-brand-chocolateLight opacity-95">Precio final con 7% de descuento aplicado.</p>
-       </div>
-      </div>
-
-      <!-- Promo 2 -->
-      <div class="premium-card rounded-[32px] p-8 bg-white flex flex-col justify-between shadow-sm">
-       <div>
-        <div class="text-xs font-bold uppercase tracking-widest text-brand-gold mb-4">Promo Pack 2</div>
-        <ul class="space-y-3 mb-8 text-brand-chocolate opacity-95">
-         <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold text-xs"></i> Cavado</li>
-         <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold text-xs"></i> Tira de Cola</li>
-        </ul>
-       </div>
-       <div>
-        <div class="font-playfair text-4xl font-bold text-brand-chocolate mb-2">$35.000</div>
-        <p class="text-xs text-brand-chocolateLight opacity-95">Excelente combinación para cuidado íntimo rápido.</p>
-       </div>
-      </div>
-
-      <!-- Promo 3 -->
-      <div class="premium-card rounded-[32px] p-8 bg-white flex flex-col justify-between shadow-sm">
-       <div>
-        <div class="text-xs font-bold uppercase tracking-widest text-brand-gold mb-4">Promo Pack 3</div>
-        <ul class="space-y-3 mb-8 text-brand-chocolate opacity-95">
-         <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold text-xs"></i> Bozo</li>
-         <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold text-xs"></i> Axilas</li>
-         <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold text-xs"></i> Cavado Completo</li>
-         <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold text-xs"></i> Pierna Entera</li>
-         <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-gold text-xs"></i> Tira de Cola</li>
-        </ul>
-       </div>
-       <div>
-        <div class="font-playfair text-4xl font-bold text-brand-chocolate mb-2">$55.000</div>
-        <p class="text-xs text-brand-chocolateLight opacity-95">Tratamiento integral multizona súper completo.</p>
-       </div>
-      </div>
-     </div>
-
-     <!-- Importante de Promos -->
-     <div class="mt-8 p-5 rounded-2xl bg-brand-creamcardstatic/20 border border-brand-creamcardstatic/40 flex items-start gap-3">
-      <i class="fa-solid fa-triangle-exclamation text-brand-gold mt-0.5"></i>
-      <p class="text-xs text-brand-chocolateLight leading-relaxed">
-       <strong>Términos y Condiciones:</strong> Todas las promociones están sujetas a aumentos periódicos según costos operativos. Los valores mostrados son vigentes para contrataciones inmediatas y pueden modificarse sin previo aviso para nuevas sesiones.
-      </p>
      </div>
     </div>
    </section>
@@ -890,27 +813,27 @@
   <script>
    // Services data
    const services = [
-     {name:'Rostro Completo', price:'$23.000', category:'rostro'},
-     {name:'Bozo', price:'$18.000', category:'rostro'},
-     {name:'Mentón', price:'$18.000', category:'rostro'},
-     {name:'Nuca', price:'$17.000', category:'rostro'},
+     {name:'Rostro Completo', category:'rostro'},
+     {name:'Bozo', category:'rostro'},
+     {name:'Mentón', category:'rostro'},
+     {name:'Nuca', category:'rostro'},
      
-     {name:'Pierna Entera', price:'$29.000', category:'piernas'},
-     {name:'Media Pierna', price:'$22.000', category:'piernas'},
+     {name:'Pierna Entera', category:'piernas'},
+     {name:'Media Pierna', category:'piernas'},
      
-     {name:'Brazos', price:'$18.000', category:'brazos'},
-     {name:'Axilas', price:'$20.000', category:'brazos'},
-     {name:'Dedos', price:'$14.000', category:'brazos'},
+     {name:'Brazos', category:'brazos'},
+     {name:'Axilas', category:'brazos'},
+     {name:'Dedos', category:'brazos'},
      
-     {name:'Cavado Completo', price:'$26.000', category:'cuerpo'},
-     {name:'Cavado Bikini', price:'$18.000', category:'cuerpo'},
-     {name:'Tira de Cola', price:'$18.000', category:'cuerpo'},
-     {name:'Glúteos', price:'$18.000', category:'cuerpo'},
-     {name:'Espalda Completa', price:'$22.000', category:'cuerpo'},
-     {name:'Espalda Baja', price:'$15.000', category:'cuerpo'},
-     {name:'Abdomen', price:'$18.000', category:'cuerpo'},
-     {name:'Línea Alba', price:'$18.000', category:'cuerpo'},
-     {name:'Aréolas', price:'$17.000', category:'cuerpo'}
+     {name:'Cavado Completo', category:'cuerpo'},
+     {name:'Cavado Bikini', category:'cuerpo'},
+     {name:'Tira de Cola', category:'cuerpo'},
+     {name:'Glúteos', category:'cuerpo'},
+     {name:'Espalda Completa', category:'cuerpo'},
+     {name:'Espalda Baja', category:'cuerpo'},
+     {name:'Abdomen', category:'cuerpo'},
+     {name:'Línea Alba', category:'cuerpo'},
+     {name:'Aréolas', category:'cuerpo'}
    ];
 
    let activeCategory = 'rostro';
@@ -921,8 +844,8 @@
      const filtered = services.filter(s => s.category === activeCategory);
      filtered.forEach(s => {
        const d = document.createElement('div');
-       d.className = 'bg-white border border-brand-creamcardstatic/40 rounded-2xl p-4 flex items-center justify-between shadow-sm hover:shadow-md hover:border-brand-gold/30 transition-all duration-300';
-       d.innerHTML = `<span class="text-sm font-semibold text-brand-chocolate">${s.name}</span><span class="font-bold text-sm text-brand-gold">${s.price}</span>`;
+       d.className = 'bg-white border border-brand-creamcardstatic/40 rounded-2xl p-4 flex items-center justify-center text-center shadow-sm hover:shadow-md hover:border-brand-gold/30 transition-all duration-300';
+       d.innerHTML = `<span class="text-sm font-semibold text-brand-chocolate">${s.name}</span>`;
        grid.appendChild(d);
      });
    }
@@ -986,8 +909,7 @@
      font_family: 'Playfair Display',
      font_size: 16,
      hero_title: 'Definitivamente Bella',
-     hero_subtitle: 'Centro de Depilación Láser',
-     promo_disclaimer: 'Las promociones no son fijas durante el tratamiento y pueden modificarse.'
+     hero_subtitle: 'Centro de Depilación Láser'
    };
 
    function applyConfig(config) {
@@ -1008,7 +930,6 @@
        navTitleEl.textContent = c.hero_title || defaultConfig.hero_title;
      }
      document.getElementById('hero-subtitle').textContent = c.hero_subtitle || defaultConfig.hero_subtitle;
-     document.getElementById('promo-disclaimer').textContent = c.promo_disclaimer || defaultConfig.promo_disclaimer;
      
      // Font family
      const ff = c.font_family || defaultConfig.font_family;
@@ -1039,7 +960,6 @@
        mapToEditPanelValues: (config) => new Map([
          ['hero_title', config.hero_title || defaultConfig.hero_title],
          ['hero_subtitle', config.hero_subtitle || defaultConfig.hero_subtitle],
-         ['promo_disclaimer', config.promo_disclaimer || defaultConfig.promo_disclaimer],
        ])
      });
    }
